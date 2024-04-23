@@ -1,9 +1,12 @@
 from models.data import users
-from utis.crud import read
+from utils.crud import read, add_user
+
+
+
 
 if __name__ == '__main__':
-    print(f'Witaj {users[0]["name"]}')
-
+    print(f'witaj {users[0]["name"]}')
 
     read(users)
-
+    add_user(users)
+    read(users)
